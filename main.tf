@@ -48,7 +48,7 @@ user_data = <<-EOF
           usermod -a -G docker ec2-user
           newgrp docker
           cd /home/ec2-user/
-          git clone https://github.com/HsSarikaya/flask.git 
+          git clone https://github.com/ismailozcelikdevops/myflask 
           docker build -t my-image /home/ec2-user/myflask/files/ 
           docker run -dp 5000:5000 my-image
           PUB=$(curl -s http://checkip.amazonaws.com)
